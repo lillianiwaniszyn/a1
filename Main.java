@@ -52,16 +52,7 @@ public class Main {
             System.out.println(character.getWinner());}
 	}
 
-	public static int getRandomWithExclusion(Random rnd, int start, int end, int... exclude) {
-	    int random = start + rnd.nextInt(end - start + 1 - exclude.length);
-	    for (int ex : exclude) {
-	        if (random < ex) {
-	            break;
-	        }
-	        random++;
-	    }
-	    return random;
-	}
+
 
 
 
@@ -78,6 +69,7 @@ public static void main(String[] args) {
     int hero, match, restart;
     //String winner;
     Random battle = new Random();
+    Battle bat = new Battle();
     Battle pikachu = new Battle();
     Battle celebi = new Battle();
     Battle snorlax = new Battle();
@@ -119,7 +111,7 @@ public static void main(String[] args) {
 
             System.out.println("Your battle is against....");
             System.out.println("");
-            match = getRandomWithExclusion(battle,1,6,1);
+            match = bat.getRandomWithExclusion(battle,1,6,1);
             printBattle(match, pikachu);
             System.out.println("");
             System.out.println("Fight again?");
@@ -134,7 +126,7 @@ public static void main(String[] args) {
         while(hero == 2){
             System.out.println("Your battle is against....");
             System.out.println("");
-            match = getRandomWithExclusion(battle,1,6,2);
+            match = bat.getRandomWithExclusion(battle,1,6,2);
             printBattle(match, celebi);
             System.out.println("");
             System.out.println("Fight again?");
@@ -149,7 +141,7 @@ public static void main(String[] args) {
         while(hero == 3){
             System.out.println("Your battle is against....");
             System.out.println("");
-            match = getRandomWithExclusion(battle,1,6,3);
+            match = bat.getRandomWithExclusion(battle,1,6,3);
             printBattle(match, snorlax);
             System.out.println("");
             System.out.println("Fight again?");
@@ -164,7 +156,7 @@ public static void main(String[] args) {
         while(hero == 4){
             System.out.println("Your battle is against....");
             System.out.println("");
-            match = getRandomWithExclusion(battle,1,6,4);
+            match = bat.getRandomWithExclusion(battle,1,6,4);
             printBattle(match, charizard);
             System.out.println("");
             System.out.println("Fight again?");
@@ -179,7 +171,7 @@ public static void main(String[] args) {
         while(hero == 5){
             System.out.println("Your battle is against....");
             System.out.println("");
-            match = getRandomWithExclusion(battle,1,6,5);
+            match = bat.getRandomWithExclusion(battle,1,6,5);
             printBattle(match, ditto);
             System.out.println("");
             System.out.println("Fight again?");
@@ -194,7 +186,7 @@ public static void main(String[] args) {
         while(hero == 6){
             System.out.println("Your battle is against....");
             System.out.println("");
-            match = getRandomWithExclusion(battle,1,6,6);
+            match = bat.getRandomWithExclusion(battle,1,6,6);
             printBattle(match, eevee);
             System.out.println("");
             System.out.println("Fight again?");
