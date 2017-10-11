@@ -31,10 +31,7 @@ public static void main(String[] args) {
             System.out.println("");
             match = bat.getRandomWithExclusion(1,6,1);
             bat.printBattle(match, pikachu);
-            System.out.println("");
-            System.out.println("Fight again?");
-            System.out.println("1 for Yes");
-            System.out.println("2 for No");
+            game.printFightAgain();
             restart = input.nextInt();
             if(game.playAgain(restart) == true)
             	break;
@@ -46,10 +43,7 @@ public static void main(String[] args) {
             System.out.println("");
             match = bat.getRandomWithExclusion(1,6,2);
             bat.printBattle(match, celebi);
-            System.out.println("");
-            System.out.println("Fight again?");
-            System.out.println("1 for Yes");
-            System.out.println("2 for No");
+            game.printFightAgain();
             restart = input.nextInt();
             if(game.playAgain(restart) == true)
             	break;
@@ -61,10 +55,7 @@ public static void main(String[] args) {
             System.out.println("");
             match = bat.getRandomWithExclusion(1,6,3);
             bat.printBattle(match, snorlax);
-            System.out.println("");
-            System.out.println("Fight again?");
-            System.out.println("1 for Yes");
-            System.out.println("2 for No");
+            game.printFightAgain();
             restart = input.nextInt();
             if(game.playAgain(restart) == true)
             	break;
@@ -76,10 +67,7 @@ public static void main(String[] args) {
             System.out.println("");
             match = bat.getRandomWithExclusion(1,6,4);
             bat.printBattle(match, charizard);
-            System.out.println("");
-            System.out.println("Fight again?");
-            System.out.println("1 for Yes");
-            System.out.println("2 for No");
+            game.printFightAgain();
             restart = input.nextInt();
             if(game.playAgain(restart) == true)
             	break;
@@ -90,11 +78,7 @@ public static void main(String[] args) {
             System.out.println("Your battle is against....");
             System.out.println("");
             match = bat.getRandomWithExclusion(1,6,5);
-            bat.printBattle(match, ditto);
-            System.out.println("");
-            System.out.println("Fight again?");
-            System.out.println("1 for Yes");
-            System.out.println("2 for No");
+            game.printFightAgain();
             restart = input.nextInt();
             if(game.playAgain(restart) == true)
             	break;
@@ -106,10 +90,7 @@ public static void main(String[] args) {
             System.out.println("");
             match = bat.getRandomWithExclusion(1,6,6);
             bat.printBattle(match, eevee);
-            System.out.println("");
-            System.out.println("Fight again?");
-            System.out.println("1 for Yes");
-            System.out.println("2 for No");
+            game.printFightAgain();
             restart = input.nextInt();
             if(game.playAgain(restart) == true)
             	break;

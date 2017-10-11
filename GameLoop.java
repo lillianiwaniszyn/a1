@@ -41,4 +41,10 @@ public class GameLoop {
            }
         else throw new IllegalArgumentException ("not a valid option");
             }
+    public void printFightAgain() {
+        System.out.println("");
+        System.out.println("Fight again?");
+        System.out.println("1 for Yes");
+        System.out.println("2 for No");
+    }
 }
