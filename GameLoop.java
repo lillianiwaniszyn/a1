@@ -31,16 +31,14 @@ public class GameLoop {
 
     	
     }
-    public boolean playAgain(int restart) {
+    public boolean playAgain(int restart) throws IllegalArgumentException{
         if(restart == 1){
             System.out.println("");
+            return false;
         }else if(restart == 2){
             System.out.println("Thank you for playing!");
             return true;
            }
-        else {
-        	return false;
-        }
-		return false;
+        else throw new IllegalArgumentException ("not a valid option");
             }
 }
