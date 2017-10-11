@@ -59,7 +59,8 @@ public class GameLoop {
         Player ditto = new Player(7,1,17);
         Player eevee = new Player(13,2,10);
         Player pokemon = new Player(1,1,1);
-        Scanner input = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner input = new Scanner(System.in);
         hero = input.nextInt();
         System.out.println("You have chosen " + pokemon.getPlayer(hero));
 
@@ -116,6 +117,7 @@ public class GameLoop {
                 System.out.println("Your battle is against....");
                 System.out.println("");
                 match = bat.getRandomWithExclusion(1,6,5);
+                bat.printBattle(match, ditto);
                 printFightAgain();
                 restart = input.nextInt();
                 if(playAgain(restart) == true)
