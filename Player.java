@@ -1,6 +1,19 @@
 package Tests;
 
 public class Player {
+    int attack;
+    int defense;
+    int health;
+    int attack1;
+    int defense1;
+    int health1;
+	public Player(int attack, int defense, int health){
+		this.attack = attack;
+		this.defense = defense;
+		this.health = health;
+		
+		
+	}
     public String getPlayer(int hero) throws IllegalArgumentException{
     	if (hero ==1)
     		return "pikachu";

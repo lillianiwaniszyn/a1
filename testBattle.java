@@ -23,5 +23,7 @@ public class testBattle {
 		assertTrue(bat.getRandomWithExclusion(1,5,5) >= 1);
 		assertTrue(bat.getRandomWithExclusion(1,5,5) <= 5);
 	}
+	
+	
 
 }
