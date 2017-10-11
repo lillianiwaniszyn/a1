@@ -38,7 +38,7 @@ public class Battle {
 		System.out.println(newHealth);
 	}
 
-	public String getWinner(Player player){
+	public String getScore(Player player){
 		do{ outcome = player.attack - player.defense1;
 		newHealth1 = player.health1 - outcome;
 		System.out.println("Your attack does " + outcome + " damage!");
@@ -79,7 +79,7 @@ public class Battle {
             character.attack1 = 6;
             character.defense1 = 0;
             character.health1 = 19;
-            System.out.println(getWinner(character));
+            System.out.println(getScore(character));
         }
 		else if(match == 2){
             System.out.println("celebi!");
@@ -87,34 +87,34 @@ public class Battle {
             character.attack1 = 8;
             character.defense1 = 1;
             character.health1 = 16;
-            System.out.println(getWinner(character));
+            System.out.println(getScore(character));
         }else if(match == 3){
             System.out.println("snorlax!");
             System.out.println("");
             character.attack1 = 5;
             character.defense1 = 2;
             character.health1 = 18;
-            System.out.println(getWinner(character));
+            System.out.println(getScore(character));
         }else if(match == 4){
             System.out.println("charizard!");
             System.out.println("");
             character.attack1 = 10;
             character.defense1 = 0;
             character.health1 = 15;
-            System.out.println(getWinner(character));
+            System.out.println(getScore(character));
         }else if(match == 5){
             System.out.println("ditto!");
             System.out.println("");
             character.attack1 = 7;
             character.defense1 = 1;
             character.health1 = 17;
-            System.out.println(getWinner(character));
+            System.out.println(getScore(character));
         }else if(match == 6){
             System.out.println("eevee!");
             System.out.println("");
             character.attack1 = 13;
             character.defense1 = 2;
             character.health1 = 10;
-            System.out.println(getWinner(character));}
+            System.out.println(getScore(character));}
 	}
 }
