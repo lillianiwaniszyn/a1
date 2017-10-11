@@ -63,64 +63,10 @@ public class Main {
 	    return random;
 	}
 
-    private static String getPlayer(int hero) {
-    	if (hero ==1)
-    		return "pikachu";
-    	if (hero ==2)
-    		return "celebi";
-    	if (hero ==3)
-    		return "snorlax";
-    	if (hero ==4)
-    		return "charizard";
-    	if (hero ==5)
-    		return "ditto";
-    	if (hero ==6)
-    		return "eevee";
-    	else return "Error";
 
-    	 }
-    public static void printMainScreen() {
-        System.out.println("Choose your HERO");
-        System.out.println("Press 1 pikachu");             
-        System.out.println("Attack      6");               
-        System.out.println("Defense     0");               
-        System.out.println("Health      19");
-        System.out.println("Press 2 celebi");
-        System.out.println("Attack      8");
-        System.out.println("Defense     1");
-        System.out.println("Health      16");
-        System.out.println("Press 3 for snorlax");
-        System.out.println("Attack      5");               
-        System.out.println("Defense     2");                
-        System.out.println("Health      18");                
-        System.out.println("Press 4 for charizard");
-        System.out.println("Attack      10");
-        System.out.println("Defense     0");
-        System.out.println("Health      15"); 
-        System.out.println("Press 5 ditto");         
-        System.out.println("Attack      7");               
-        System.out.println("Defense     1");              
-        System.out.println("Health      17");              
-        System.out.println("Press 6 for eevee");
-        System.out.println("Attack      13");
-        System.out.println("Defense     2");
-        System.out.println("Health      10");
-        
 
-    	
-    }
-    private static boolean playAgain(int restart) {
-        if(restart == 1){
-            System.out.println("");
-        }else if(restart == 2){
-            System.out.println("Thank you for playing!");
-            return true;
-           }
-        else {
-        	return false;
-        }
-		return false;
-            }
+
+
     	
     
 
@@ -138,6 +84,8 @@ public static void main(String[] args) {
     Battle charizard = new Battle();
     Battle ditto = new Battle();
     Battle eevee = new Battle();
+    GameLoop game = new GameLoop();
+    Player pokemon = new Player();
 
     pikachu.attack = 6;
     pikachu.defense = 0;
@@ -163,9 +111,9 @@ public static void main(String[] args) {
     eevee.defense = 2;
     eevee.health = 10;
 
-    printMainScreen();
+    game.printMainScreen();
     hero = input.nextInt();
-    System.out.println("You have chosen " + getPlayer(hero));
+    System.out.println("You have chosen " + pokemon.getPlayer(hero));
 
         while(hero == 1){
 
@@ -178,7 +126,7 @@ public static void main(String[] args) {
             System.out.println("1 for Yes");
             System.out.println("2 for No");
             restart = input.nextInt();
-            if(playAgain(restart) == true)
+            if(game.playAgain(restart) == true)
             	break;
 
                 }
@@ -193,7 +141,7 @@ public static void main(String[] args) {
             System.out.println("1 for Yes");
             System.out.println("2 for No");
             restart = input.nextInt();
-            if(playAgain(restart) == true)
+            if(game.playAgain(restart) == true)
             	break;
 
                 }
@@ -208,7 +156,7 @@ public static void main(String[] args) {
             System.out.println("1 for Yes");
             System.out.println("2 for No");
             restart = input.nextInt();
-            if(playAgain(restart) == true)
+            if(game.playAgain(restart) == true)
             	break;
 
                 }
@@ -223,7 +171,7 @@ public static void main(String[] args) {
             System.out.println("1 for Yes");
             System.out.println("2 for No");
             restart = input.nextInt();
-            if(playAgain(restart) == true)
+            if(game.playAgain(restart) == true)
             	break;
 
                 }
@@ -238,7 +186,7 @@ public static void main(String[] args) {
             System.out.println("1 for Yes");
             System.out.println("2 for No");
             restart = input.nextInt();
-            if(playAgain(restart) == true)
+            if(game.playAgain(restart) == true)
             	break;
 
                 }
@@ -253,7 +201,7 @@ public static void main(String[] args) {
             System.out.println("1 for Yes");
             System.out.println("2 for No");
             restart = input.nextInt();
-            if(playAgain(restart) == true)
+            if(game.playAgain(restart) == true)
             	break;
 
                 }

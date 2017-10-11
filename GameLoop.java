@@ -31,4 +31,16 @@ public class GameLoop {
 
     	
     }
+    public boolean playAgain(int restart) {
+        if(restart == 1){
+            System.out.println("");
+        }else if(restart == 2){
+            System.out.println("Thank you for playing!");
+            return true;
+           }
+        else {
+        	return false;
+        }
+		return false;
+            }
 }
