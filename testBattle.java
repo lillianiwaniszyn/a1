@@ -17,11 +17,11 @@ public class testBattle {
 	}
 	@Test
 	public void testGetRandomWithExclusion() {
-		assertNotEquals(2, bat.getRandomWithExclusion(rand, 1,5,2));
-		assertNotEquals(1, bat.getRandomWithExclusion(rand, 1,5,1));
-		assertNotEquals(5, bat.getRandomWithExclusion(rand, 1,5,5));
-		assertTrue(bat.getRandomWithExclusion(rand, 1,5,5) >= 1);
-		assertTrue(bat.getRandomWithExclusion(rand, 1,5,5) <= 5);
+		assertNotEquals(2, bat.getRandomWithExclusion(1,5,2));
+		assertNotEquals(1, bat.getRandomWithExclusion(1,5,1));
+		assertNotEquals(5, bat.getRandomWithExclusion(1,5,5));
+		assertTrue(bat.getRandomWithExclusion(1,5,5) >= 1);
+		assertTrue(bat.getRandomWithExclusion(1,5,5) <= 5);
 	}
 
 }

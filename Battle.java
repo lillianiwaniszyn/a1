@@ -11,8 +11,8 @@ public class Battle {
 	int attack, attack1;
 	int defense, defense1;
 	int health, health1;
-	public int getRandomWithExclusion(Random rnd, int start, int end, int... exclude) {
-	    int random = start + rnd.nextInt(end - start + 1 - exclude.length);
+	public int getRandomWithExclusion(int start, int end, int... exclude) {
+	    int random = start + battle.nextInt(end - start + 1 - exclude.length);
 	    for (int ex : exclude) {
 	        if (random < ex) {
 	            break;
